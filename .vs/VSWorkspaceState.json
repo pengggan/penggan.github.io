@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\screenshot",
+    "\\static",
+    "\\static\\fonts"
   ],
+  "SelectedNode": "\\static\\style.css",
   "PreviewInSolutionExplorer": false
 }
