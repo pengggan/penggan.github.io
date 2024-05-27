@@ -13,31 +13,31 @@
 			"name": "YouTube",
 			"href": "https://www.youtube.com/",
 			"desc": "绿软、汉化软件分享",
-			"logo": "static/icons/dayanzai.me.ico"
+			"logo": "static/icons/"
 		},
 		{
-			"name": "殁漂遥",
-			"href": "https://www.mpyit.com/",
+			"name": "观察者",
+			"href": "www.guancha.cn",
 			"desc": "分类齐全，不定时修改下载地址获取方式",
-			"logo": "static/icons/mpyit.com.ico"
+			"logo": "static/icons/"
 		},
 		{
-			"name": "胡萝卜周",
-			"href": "http://www.carrotchou.blog/",
+			"name": "清风DJ",
+			"href": "www.vvvdj.com/djshow/146.html",
 			"desc": "又一个软件分享'领跑者'",
-			"logo": "static/icons/appcgn.com.ico"
+			"logo": "static/icons/"
 		},
 		{
-			"name": "软件缘",
-			"href": "https://www.appcgn.com/",
+			"name": "Google",
+			"href": "https://www.google.com.hk",
 			"desc": "绿化、汉化软件",
-			"logo": "static/icons/appcgn.com.ico"
+			"logo": "static/icons/"
 		},
 		{
-			"name": "看雪学院",
-			"href": "https://www.kanxue.com/",
+			"name": "github",
+			"href": "https://github.com/penggan00/penggan00.github.io",
 			"desc": "加密与解密，渗透与反渗透",
-			"logo": "static/icons/kanxue.com.ico"
+			"logo": "static/icons/"
 		},
 		{
 			"name": "少数派",
