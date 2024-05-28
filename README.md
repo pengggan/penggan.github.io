@@ -1,6 +1,5 @@
 Webstack网址导航
-===
-### Demo: [➡️ www.webstack.cc](https://webstack.cc)
+=
 
 QQ群交流：304584722 ; QQ交流群2：740911918
 
@@ -24,8 +23,6 @@ QQ群交流：304584722 ; QQ交流群2：740911918
 欢迎加群一起学习交流技术
 ---
 |Q群(304584722)|Q群2(740911918)|
-|--|--|
-|![](http://www.webstack.cc/assets/images/qqgroup_webstack.jpg)|![](http://www.webstack.cc/assets/images/qqgroup_webstack2.jpg)|
 
 怎么用?
 ---
