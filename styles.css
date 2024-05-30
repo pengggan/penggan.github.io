@@ -2,7 +2,12 @@
 /* styles.css */
 
 a {
-  font-size: 16px;
+  font-size: 20px; padding: 5px 15; color: blue; 
+}
+
+2. 
+a:hover {
+  color: red;
 }
 
 body {
