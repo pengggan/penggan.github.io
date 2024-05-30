@@ -1,4 +1,10 @@
+
 /* styles.css */
+
+a {
+  font-size: 16px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
