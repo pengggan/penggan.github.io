@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="search-container">
-        <form action="https://www.bing.com/search" method="get" target="_blank">
-            <input type="text" name="q" placeholder="Bing 搜索">
-            <button type="submit">搜索</button>
-        </form>
-        <form action="https://www.google.com/search" method="get" target="_blank">
-            <input type="text" name="q" placeholder="Google 搜索">
-            <button type="submit">搜索</button>
-        </form>
-    </div>
+    <header>
+        <h1>书签导航</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <form action="https://www.bing.com/search" method="get" target="_blank">
+                <input type="text" name="q" placeholder="搜索必应...">
+                <button type="submit">必应搜索</button>
+            </form>
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <input type="text" name="q" placeholder="搜索谷歌...">
+                <button type="submit">谷歌搜索</button>
+            </form>
+        </div>
     <div class="bookmarks">
         <a href="https://www.example1.com" target="_blank">书签1</a>
         <a href="https://www.example2.com" target="_blank">书签2</a>
