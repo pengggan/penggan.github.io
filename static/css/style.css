@@ -12,11 +12,6 @@ html, body {
     padding: 0;
     border: 0
 }
-
-a:hover, a:focus {
-    color: #232323;
-    text-decoration: none
-}
 /* ================ reset 样式 start  ================ */
 * {
     margin: 0;
