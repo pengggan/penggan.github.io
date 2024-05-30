@@ -6,12 +6,6 @@ a{color:#282a2d;outline:0!important;text-decoration:none}
 a:hover{text-decoration:none;color:#f1404b}
 p{color:#1d232b;margin:0;white-space:normal;word-break:break-all} 
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0
-}
 /* ================ reset 样式 start  ================ */
 * {
     margin: 0;
