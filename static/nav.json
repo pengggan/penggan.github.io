@@ -5,23 +5,15 @@
 	"sites": [{
 		"name": "52破解",
 		"href": "https://www.52pojie.cn/",
-		"desc": "软件安全与病毒分析,逆向、破解、技术",
-		"logo": "static/icons/52pojie.cn.ico"
 	}, {
 		"name": "大眼仔旭",
 		"href": "http://www.dayanzai.me/",
-		"desc": "绿软、汉化软件分享",
-		"logo": "static/icons/dayanzai.me.ico"
 	}, {
 		"name": "殁漂遥",
 		"href": "https://www.mpyit.com/",
-		"desc": "分类齐全，不定时修改下载地址获取方式",
-		"logo": "static/icons/mpyit.com.ico"
 	}, {
 		"name": "胡萝卜周",
 		"href": "http://www.carrotchou.blog/",
-		"desc": "又一个软件分享'领跑者'",
-		"logo": "static/icons/appcgn.com.ico"
 	}, {
 		"name": "软件缘",
 		"href": "https://www.appcgn.com/",
