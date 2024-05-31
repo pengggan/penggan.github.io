@@ -1,32 +1,103 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-    <link rel="shortcut icon" type="image/png" href="tv/tv／凤凰卫视中文台．png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>书签导航</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="static/img/favicon.ico">        
+    <title>个人书签导航</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #555;
+            color: #fff;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #111;
+            padding: 10px;
+            display: none;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .main-content a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+        .main-content a:hover {
+            background-color: #333;
+        }
+        @media (min-width: 600px) {
+            .sidebar {
+                display: block;
+            }
+            .main-content {
+                margin-left: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>书签导航</h1>
-    </header>
-    <main>
-        <div class="search-container">
-            <form action="www.baidu.com/search" method="get" target="_blank">
-                <input type="text" name="q" placeholder="搜索百度...">
-                <button type="submit">百度搜索</button>
-            </form>
+    <div class="container">
+        <div class="search-bar">
             <form action="https://www.bing.com/search" method="get" target="_blank">
-                <input type="text" name="q" placeholder="搜索必应...">
-                <button type="submit">必应搜索</button>
+                <input type="text" name="q" placeholder="Bing 搜索">
+                <input type="submit" value="搜索">
             </form>
             <form action="https://www.google.com/search" method="get" target="_blank">
-                <input type="text" name="q" placeholder="搜索谷歌...">
-                <button type="submit">谷歌搜索</button>
+                <input type="text" name="q" placeholder="Google 搜索">
+                <input type="submit" value="搜索">
+            </form>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <input type="text" name="wd" placeholder="百度 搜索">
+                <input type="submit" value="搜索">
             </form>
         </div>
-    <div class="bookmarks">
+        <div class="sidebar">
+            <a href="#home">首页</a>
+            <a href="#news">新闻</a>
+            <a href="#contact">联系</a>
+            <a href="#about">关于</a>
+        </div>
+        <div class="main-content">
         <a href="https://m.guancha.cn/" target="_blank">观察网</a>
         <a href="https://m.vvvdj.com/" target="_blank">清风</a>
         <a href="https://www.youtube.com/" target="_blank">youtube</a>
@@ -35,10 +106,7 @@
         <a href="https://www.freedidi.com/" target="_blank">个零度解说</a>
         <a href="https://kjgx.168668520.xyz/" target="_blank">科技共享</a>
 
-
-
-
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
