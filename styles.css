@@ -2,9 +2,13 @@
 /* styles.css */
 
 a {
-  color: #000000; /* 链接颜色 */
-  font-size: 20px; /* 链接字体大小 */
-  padding: 15px 20px; /* 链接上下左右间距 */
+  color: #fff;
+  background-color: #000;
+  font-size: 16px; /* 设置字体大小 */
+  font-family: Arial, sans-serif; /* 设置字体样式 */
+  padding: 10px 20px; /* 设置内边距 */
+  border: 1px solid #333; /* 设置边框 */
+  text-decoration: none; /* 去除下划线 */
 }
 
 /* 鼠标悬停时链接的颜色 */
