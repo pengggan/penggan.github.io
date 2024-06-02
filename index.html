@@ -1,43 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>科技共享导航站</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>书签导航</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .category {
+            width: 90%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .category h2 {
+            font-size: 20px;
+            background-color: #ddd;
+            padding: 10px;
+            margin: 0;
+            border-radius: 5px 5px 0 0;
+        }
+        .links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .links li {
+            border-bottom: 1px solid #ddd;
+        }
+        .links li:last-child {
+            border-bottom: none;
+        }
+        .links a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+        .links a:hover {
+            background-color: #eee;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>科技共享导航站</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#recommendations">常用推荐</a></li>
-            <li><a href="#community">社区咨询</a></li>
-            <li><a href="#resources">素材资源</a></li>
-            <li><a href="#tools">常用工具</a></li>
-            <li><a href="#tutorials">学习教程</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="recommendations">
-            <h2>常用推荐</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/channel/UCQoagx4VHBw3HkAyzvKEEBA/">科技共享YouTube</a></li>
-                <li><a href="https://kjgx668.blogspot.com/">资源博客</a></li>
-                <li><a href="https://kjgx.freeflarum.com/">论坛交流</a></li>
-                <!-- Add more links as needed -->
-            </ul>
-        </section>
-        <section id="community">
-            <h2>社区咨询</h2>
-            <ul>
-                <li><a href="https://www.leiphone.com/">雷锋网</a></li>
-                <li><a href="https://36kr.com/">36kr</a></li>
-                 
-        <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></div>
-<div class="main-content">
-        <a href="https://m.vvvdj.com/" target="_blank">清风</a></div>
+    <h1>书签导航</h1>
+    <div class="category">
+        <h2>社交媒体</h2>
+        <ul class="links">
+            <!-- 在此添加社交媒体书签链接 -->
+             href="https://m.vvvdj.com/" target="_blank">清风</a></div>
 <div class="main-content">
         <a href="https://www.52pojie.cn/" target="_blank">吾爱</a></div>
 <div class="main-content">
@@ -72,17 +99,21 @@
         <a href="https://whoer.net/zh/" target="_blank">IP</a></div>
 <div class="main-content"> 
         <a href="https://wuweipansou.top/" target="_blank">无为</a>
-                
-                <div class="main-content"> 
-                
-                <!-- Add more links as needed -->
-            </ul>
-        </section>
-        <!-- Add more sections as needed -->
-    </main>
-    <footer>
-        <p>&copy; 2024 科技共享导航站</p>
-    </footer>
-    <script src="scripts.js"></script>
+        </ul>
+    </div>
+    <div class="category">
+        <h2>新闻</h2>
+        <ul class="links">
+            <li><a href="https://www.cnn.com">CNN</a></li>
+            <!-- 可以在此添加更多新闻书签链接 -->
+        </ul>
+    </div>
+    <div class="category">
+        <h2>娱乐</h2>
+        <ul class="links">
+            <li><a href="https://www.youtube.com">YouTube</a></li>
+            <!-- 可以在此添加更多娱乐书签链接 -->
+        </ul>
+    </div>
 </body>
 </html>
