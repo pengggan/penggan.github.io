@@ -11,6 +11,11 @@ header {
     text-align: center;
 }
 
+h1 a {
+  color: black;
+}
+
+
 nav {
     background-color: #444;
     overflow: hidden;
