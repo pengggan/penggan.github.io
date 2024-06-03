@@ -1,182 +1,188 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
-    <title>好酒</title>
-    <style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico"> 
+        <title>好酒</title>
+        <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
         }
 
-        .category {
-            width: 90%;
-            max-width: 600px;
-            margin-bottom: 20px;
+.category {
+        width: 90%;
+        max-width: 600px;
+        margin-bottom: 20px;
         }
-        .category h2 {
-            font-size: 20px;
-            background-color: #ddd;
-            padding: 10px;
-            margin: 0;
-            border-radius: 5px 5px 0 0;
+
+.category h2 {
+        font-size: 20px;
+        background-color: #ddd;
+        padding: 10px;
+        margin: 0;
+        border-radius: 5px 5px 0 0;
         }
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: #fff;
-            border-radius: 0 0 5px 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 0;
-            padding: 0;
+
+.links {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin: 0;
+        padding: 0;
         }
-        .links a {
-            flex: 1 1 33%;
-            text-decoration: none;
-            color: #333;
-            padding: 15px;
-            box-sizing: border-box;
-            border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            text-align: center;
-            transition: background-color 0.3s;
+
+.links a {
+        flex: 1 1 33%;
+        text-decoration: none;
+        color: #333;
+        padding: 15px;
+        box-sizing: border-box;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        transition: background-color 0.3s;
         }
-        .links a:hover {
-            background-color: #eee;
+
+.links a:hover {
+        background-color: #eee;
         }
-        .links a:nth-child(3n) {
-            border-right: none;
+
+.links a:nth-child(3n) {
+        border-right: none;
         }
-        .links a:last-child,
+
+ .links a:last-child,
         .links a:nth-last-child(2):nth-child(3n-1),
         .links a:nth-last-child(1):nth-child(3n) {
-            border-bottom
+        border-bottom
         }
 
-  .search-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      background-color: #f1f1f1;
-    }
+h2 * {
+        margin-top: -4px;
+        margin-bottom: -4px; 
+        }
 
-  .search-box {
-      width: 45%;
-      padding: 5px;
-      border: 1px solid #ccc;
-    }
+.search-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+        background-color: #f1f1f1;
+        }
 
-  .search-button {
-      padding: 5px 10px;
-      background-color: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
+.search-box {
+       width: 45%;
+       padding: 5px;
+       border: 1px solid #ccc;
+        }
+
+.search-button {
+       padding: 5px 10px;
+       background-color: #333;
+       color: white;
+       border: none;
+       cursor: pointer;
+        }
 
 .email-links {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      background-color: #f1f1f1;
-      margin-top: -19px; // 减少与上面的距离为 10 像素
-    }
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 10px;
+       background-color: #f1f1f1;
+       margin-top: -19px; // 减少与上面的距离为 10 像素
+        }
 
-   .email-links a {
-      color: #333;
-      text-decoration: none;
-      padding: 5px 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
+.email-links a {
+       color: #333;
+       text-decoration: none;
+       padding: 5px 10px;
+       border: 1px solid #ccc;
+       border-radius: 3px;
+        }
 
-   .email-links a:hover {
-      background-color: #ddd;
-   }
-    </style>
-</head>
-
-<body>
-
-    <div class="category">
-  <h2>
-  <div class="search-container">
-      <form action="https://www.google.com/search" method="get" target="_blank">
-      <input type="text" name="q" class="search-box" placeholder="Google ">
-      <input type="submit" value="搜索" class="search-button">
-    </form>
-      <form action="https://www.baidu.com/search" method="get" target="_blank">
-      <input type="text" name="q" class="search-box" placeholder="百度 ">
-      <input type="submit" value="搜索" class="search-button">
-    </form>
-  </div>
-</h2>
+.email-links a:hover {
+        background-color: #ddd;
+        }
+        </style>
+        </head>
+<!-- 搜索-->
+        <body>
+        <div class="category">
+        <h2>
+        <div class="search-container">
+        <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" class="search-box" placeholder="Google ">
+        <input type="submit" value="搜索" class="search-button">
+        </form>
+        <form action="https://www.baidu.com/search" method="get" target="_blank">
+        <input type="text" name="q" class="search-box" placeholder="百度 ">
+        <input type="submit" value="搜索" class="search-button">
+        </form>
+        </div>
+        </h2>
         <div class="links">
-            <!-- 国内在此添加链接 -->
+<!-- 国内在此添加国内链接 -->
         <a href="https://m.vvvdj.com/" target="_blank">清风</a>
+        <a href="https://replit.com/@REHANSANISH/Firefox-in-Replit#main.py/" target="_blank">Replit</a>
+        <a href="https://vpn.olaiya000.xyz/" target="_blank">999</a>
         <a href="https://www.52pojie.cn/" target="_blank">吾爱</a>
-
-        <a href="https://www.guancha.cn" target="_blank">观察网</a>
         <a href="https://www.right.com.cn/" target="_blank">恩山</a>
         <a href="https://docs.qq.com/" target="_blank">腾讯文档</a>
-        <a href="https://replit.com/@REHANSANISH/Firefox-in-Replit#main.py/" target="_blank">Replit</a>
+        <a href="https://m.guancha.cn" target="_blank">观察网</a>
         <a href="https://navigate.ednovas.xyz/" target="_blank">EdNovas</a>
         <a href="https://dh.kejilion.pro/" target="_blank">科技lion</a>
         <a href="https://www.freedidi.com/" target="_blank">零度解说</a>
         <a href="https://kjgx.168668520.xyz/" target="_blank">科技共享</a>
-        <a href="https://www.cloudns.net/index/show/login/" target="_blank">域名</a>
         <a href="https://wuweipansou.top/" target="_blank">无为</a>
+        <a href="https://www.xzso.net/" target="_blank">小站盘搜</a>
+        <a href="https://www.nodeseek.com/" target="_blank">nodeseek</a>
+        <a href="https://www.123pan.com/" target="_blank">123云盘</a>
 
 
 
-            <!-- 国外在此添加链接 -->    
+<!-- -------------------------------------------------------------------------------- -->
         </div>
-    </div>
-    <div class="category">
-
-    <div class="email-links">
-      <a href="https://mail.google.com/mail/u/0/">谷歌邮箱</a>
-      <a href="https://penggan0.cloudns.be">blog</a>
-      <a href="https://outlook.live.com/owa/">微软邮箱</a>
-    </div>
+        </div>
+        <div class="category">
+        <div class="email-links">
+        <a href="https://mail.google.com/mail/u/0/">谷歌邮箱</a>
+        <a href="https://outlook.live.com/owa/">微软邮箱</a>       
+        <a href="https://pengggan.github.io/">blog</a>
+        </div>
         <div class="links">
-            <!-- 可以在此添加链接 -->
-        <a href="https://github.com/penggan00/penggan00.github.io" target="_blank">github</a>
+<!-- 可以在此添加国外链接 -->
+        <a href="https://github.com/penggan00/penggan00.github.io" target="_blank">github</a> 
+        <a href="https://github.com/pengggan/pengggan.github.io" target="_blank">github2</a>
         <a href="https://www.youtube.com/" target="_blank">youtube</a>
-        <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
-        <a href="https://www.cnn.com">CNN</a>
         <a href="https://translate.google.com/" target="_blank">翻譯</a>
+        <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
         <a href="https://drive.google.com/" target="_blank">雲端硬碟</a>
-        <a href="https://dash.cloudflare.com/login/" target="_blank">warp</a>
+        <a href="https://dash.cloudflare.com/login/" target="_blank">1.1.1.1</a>
+        <a href="https://www.cloudns.net/index/show/login/" target="_blank">cloudns</a> 
         <a href="https://app.cloudcone.com/" target="_blank">9美元1年</a>
-
         <a href="https://www.oracle.com/cn/" target="_blank">甲骨文云</a>
-
         <a href="https://sms-activate.org/cn/" target="_blank">接码</a>
         <a href="https://www.speedtest.net/" target="_blank">测速网</a>
         <a href="https://www.netflix.com//" target="_blank">netflix</a>
-        <a href="https://vpn.olaiya000.xyz/" target="_999">IP</a>
-        <a href="https://whoer.net/zh/" target="_blank">IP</a>
-        <a href="https://whoer.net/zh/" target="_blank">IP</a>
-        <a href="https://whoer.net/zh/" target="_blank">IP</a>
-        <a href="https://whoer.net/zh/" target="_blank">IP</a>
-        <a href="https://whoer.net/zh/" target="_blank">IP</a>
-        <a href="https://whoer.net/zh/" target="_blank">IP</a>
-        <a href="https://whoer.net/zh/" target="_blank">IP</a>
-            <!-- 可以在此添加链接 -->
-        </div>
-    </div>
+        <a href="https://whoer.net/zh/" target="_blank">我的IP</a>
+        <a href="https://www.techxiaofei.com/" target="_blank">科技小飞</a>
 
+
+
+<!-- -------------------------------------------------------------------------------- -->
+        </div>
+        </div>
 </body>
 </html>
