@@ -1,0 +1,119 @@
+<!-- 文档类型声明 -->
+<!DOCTYPE html>
+<!-- HTML 标签，指定语言为英语 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 响应式视口设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题 -->
+    <title>My Blog</title>
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <!-- 页面标题 -->
+        <h1>My Blog</h1>
+    </header>
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 搜索框容器 -->
+        <div class="search-container">
+            <!-- 搜索输入框 -->
+            <input type="text" id="search-input" placeholder="Search articles..." oninput="searchArticles()">
+        </div>
+        <!-- 文章列表容器 -->
+        <div id="articles"></div>
+        <!-- 分页容器 -->
+        <div class="pagination">
+            <!-- 上一页按钮 -->
+            <button id="prev" onclick="prevPage()">Previous</button>
+            <!-- 当前页数 -->
+            <span id="page-num"></span>
+            <!-- 下一页按钮 -->
+            <button id="next" onclick="nextPage()">Next</button>
+        </div>
+    </main>
+    <!-- JavaScript 脚本 -->
+    <script>
+        // 文章数据
+        const articles = [
+            { title: "注册甲骨文云服务器的地址", link: "articles/article1.html", lastModified: "2024-06-04" },
+            { title: "shadowsocks ", link: "articles/article2.html", lastModified: "2024-06-04" },
+            { title: "Article 3", link: "articles/article3.html", lastModified: "2024-05-28" },
+            { title: "Article 4", link: "articles/article4.html", lastModified: "2024-05-25" },
+            { title: "Article 5", link: "articles/article5.html", lastModified: "2024-05-22" },
+            { title: "Article 6", link: "articles/article6.html", lastModified: "2024-05-20" },
+            { title: "Article 7", link: "articles/article7.html", lastModified: "2024-05-18" },
+            { title: "Article 8", link: "articles/article8.html", lastModified: "2024-05-15" },
+            { title: "Article 9", link: "articles/article9.html", lastModified: "2024-05-12" },
+            { title: "Article 10", link: "articles/article10.html", lastModified: "2024-05-10" },
+            { title: "Article 11", link: "articles/article11.html", lastModified: "2024-05-08" },
+            { title: "Article 12", link: "articles/article12.html", lastModified: "2024-05-05" }
+
+        ];
+
+        // 当前页数
+        let currentPage = 1;
+        // 每页显示的文章数量
+        const articlesPerPage = 8;
+
+        // 显示文章列表函数
+        function displayArticles(articles, page) {
+            const start = (page - 1) * articlesPerPage;
+            const end = page * articlesPerPage;
+            const paginatedArticles = articles.slice(start, end);
+
+            const articlesContainer = document.getElementById('articles');
+            articlesContainer.innerHTML = '';
+            paginatedArticles.forEach(article => {
+                const articleDiv = document.createElement('div');
+                articleDiv.classList.add('post');
+                articleDiv.innerHTML = `
+                    <h2><a href="${article.link}">${article.title}</a></h2>
+                    <div class="timestamp">Last modified: ${article.lastModified}</div>
+                `;
+                articlesContainer.appendChild(articleDiv);
+            });
+
+            document.getElementById('page-num').innerText = `Page ${page}`;
+            document.getElementById('prev').disabled = page === 1;
+            document.getElementById('next').disabled = end >= articles.length;
+        }
+
+        // 加载文章函数
+        function loadArticles() {
+            const sortedArticles = articles.sort((a, b) => new Date(b.lastModified) - new Date(a.lastModified));
+            displayArticles(sortedArticles, currentPage);
+        }
+
+        // 下一页函数
+        function nextPage() {
+            if ((currentPage * articlesPerPage) < articles.length) {
+                currentPage++;
+                loadArticles();
+            }
+        }
+
+        // 上一页函数
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                loadArticles();
+            }
+        }
+
+        // 搜索文章函数
+        function searchArticles() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filteredArticles = articles.filter(article => article.title.toLowerCase().includes(query));
+            displayArticles(filteredArticles, 1);
+        }
+
+        // 文档加载完成时加载文章
+        document.addEventListener('DOMContentLoaded', loadArticles);
+    </script>
+</body>
+</html>
