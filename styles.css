@@ -48,24 +48,47 @@ body {
     background-color: #eee; /* 鼠标悬停时背景颜色为浅灰色 */
 }
 
-h2 * {
-    display: inline; /* 设置为行内元素 */
-    margin-top: 0;
-    margin-bottom: 0;
-    text-decoration: none; /* 无文本装饰 */
-    text-align: center; /* 文本居中 */
-    margin-left: 10px; /* 添加间距 */
-}
-
 .search-container {
     display: flex; /* 以弹性布局 */
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
-    padding: 4px; /* 内边距 4 像素 */
+    padding: 10px; /* 内边距 10 像素 */
+    background-color: #f1f1f1; /* 背景颜色为浅灰色 */
+    border-radius: 5px; /* 边框半径 5 像素 */
+    margin-bottom: 20px; /* 底部外边距 20 像素 */
 }
 
-.search-container a {
-    margin-left: 10px; /* 为链接之间添加间距 */
+.blog-link {
+    margin-right: 20px; /* 右外边距 20 像素 */
+    font-size: 20px; /* 字体大小 16 像素 */
+    text-decoration: none; /* 无文本装饰 */
+    color: #333; /* 文本颜色为深灰色 */
+}
+
+.search-form {
+    display: flex; /* 以弹性布局 */
+    align-items: center; /* 垂直居中 */
+}
+
+.search-box {
+    width: 80px; /* 设置搜索框宽度 */
+    padding: 5px; /* 内边距 5 像素 */
+    border: 1px solid #ccc; /* 边框为 1 像素实线灰色 */
+    border-radius: 3px; /* 边框半径 3 像素 */
+    margin-right: 10px; /* 右外边距 10 像素 */
+}
+
+.search-button {
+    padding: 5px 10px; /* 内边距 5 像素 10 像素 */
+    background-color: #333; /* 背景颜色为深灰色 */
+    color: white; /* 文本颜色为白色 */
+    border: none; /* 无边框 */
+    border-radius: 3px; /* 边框半径 3 像素 */
+    cursor: pointer; /* 鼠标悬停时光标为指针 */
+}
+
+.search-button:hover {
+    background-color: #555; /* 鼠标悬停时背景颜色变深 */
 }
 
 .email-links {
@@ -80,4 +103,5 @@ h2 * {
 .email-links a {
     color: #333; /* 文本颜色为深灰色 */
     text-decoration: none; /* 无文本装饰 */
-    padding: 5px 10px; /* 内边距 5 像素 10
+    padding: 5px 10px; /* 内边距 5 像素 10 像素 */
+}
