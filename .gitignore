@@ -2,20 +2,15 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/.vs/penggan00.github.io/FileContentIndex/085f8b9d-5f7f-4c4b-9eda-f4f724cedcdb.vsidx
-/.vs/penggan00.github.io/FileContentIndex/469006f1-02e6-4efc-80fe-f485a5bb92ec.vsidx
-/.vs/penggan00.github.io/FileContentIndex/5017c3db-d088-4f8e-8466-4fc85040a029.vsidx
-/.vs/penggan00.github.io/FileContentIndex/d22be199-963e-42fd-a434-be63634decc5.vsidx
-/.vs/penggan00.github.io/FileContentIndex/f1e7825a-76c4-45fc-ae4e-e9d57e9a289a.vsidx
+/.vs/penggan00.github.io/FileContentIndex/0f885718-27c6-45f6-b88b-1a2756dcb000.vsidx
+/.vs/penggan00.github.io/FileContentIndex/bdf74418-0dc8-47fb-9b89-f1c10ba921ae.vsidx
+/.vs/penggan00.github.io/FileContentIndex/da67c9ab-eea4-4a3d-adc9-2e600053ed8f.vsidx
+/.vs/penggan00.github.io/FileContentIndex/fa2f0052-6596-4fef-bd0f-b57656a42e0f.vsidx
 /.vs/penggan00.github.io/v17/.wsuo
-/.vs/penggan00.github.io/v17/DocumentLayout.json
 /.vs/slnx.sqlite
+/.vs/penggan00.github.io/v17/DocumentLayout.json
+/.vs/penggan00.github.io/FileContentIndex/69003957-ba06-44bc-853e-ecfef544a0ea.vsidx
 /.vs/VSWorkspaceState.json
-/.vs/penggan00.github.io/config/applicationhost.config
-/.vs/penggan00.github.io/FileContentIndex/042eb3bf-ad42-48bc-b236-0ad4f280538d.vsidx
-/.gitignore
-/.gitignore
-/.vs/penggan00.github.io/FileContentIndex/19e7b50b-6c52-4760-b160-42c680c6b730.vsidx
-/.vs/penggan00.github.io/FileContentIndex/86d8ac37-9644-4882-bb0f-410115299f7f.vsidx
-/.vs/penggan00.github.io/FileContentIndex/df0b2ca9-ae17-49a4-85a7-56363fc58c05.vsidx
+/.vs/penggan00.github.io/FileContentIndex/2f8ceed2-55a3-4216-8e23-ffa6121d6b04.vsidx
+/.vs/penggan00.github.io/FileContentIndex/0de706b1-c766-41e1-945e-f2af37d399b1.vsidx
 *.vsidx

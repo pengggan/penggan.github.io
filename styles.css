@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif; /* 字体为 Arial 或无衬线字体 */
+    background-color: #f7f7f7; /* 背景颜色为浅灰色 */
+    color: #333; /* 文本颜色为深灰色 */
+    margin: 0; /* 外边距为 0 */
+    padding: 0; /* 内边距为 0 */
+    display: flex; /* 以弹性布局 */
+    flex-direction: column; /* 主轴为列方向 */
+    align-items: center; /* 水平居中 */
+    padding-top: 20px; /* 顶部内边距 20 像素 */
+}
+
+.category {
+    width: 90%; /* 宽度为 90% */
+    max-width: 600px; /* 最大宽度为 600 像素 */
+    margin-bottom: 20px; /* 底部外边距 20 像素 */
+}
+
+.category h2 {
+    font-size: 20px; /* 字体大小 20 像素 */
+    background-color: #ddd; /* 背景颜色为浅灰色 */
+    padding: 10px; /* 内边距 10 像素 */
+    margin: 0; /* 外边距为 0 */
+    border-radius: 5px 5px 0 0; /* 上边框半径 5 像素 */
+}
+
+.links {
+    display: flex; /* 以弹性布局 */
+    flex-wrap: wrap; /* 可换行 */
+    background-color: #fff; /* 背景颜色为白色 */
+    border-radius: 0 0 5px 5px; /* 下边框半径 5 像素 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 阴影效果 */
+    margin: 0; /* 外边距为 0 */
+    padding: 0; /* 内边距为 0 */
+}
+
+.links a {
+    flex: 1 1 25%; /* 弹性比例为 1，可拉伸，宽度占 25% */
+    text-decoration: none; /* 无文本装饰 */
+    color: #333; /* 文本颜色为深灰色 */
+    padding: 15px; /* 内边距 15 像素 */
+    box-sizing: border-box; /* 盒模型以边框为准 */
+    text-align: center; /* 文本居中 */
+    transition: background-color 0.3s; /* 过渡效果，背景颜色 0.3 秒 */
+}
+
+.links a:hover {
+    background-color: #eee; /* 鼠标悬停时背景颜色为浅灰色 */
+}
+
+h2 * {
+    display: inline; /* 设置为行内元素 */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none; /* 无文本装饰 */
+    text-align: center; /* 文本居中 */
+    margin-left: 10px; /* 添加间距 */
+}
+
+.search-container {
+    display: flex; /* 以弹性布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    padding: 4px; /* 内边距 4 像素 */
+}
+
+.search-container a {
+    margin-left: 10px; /* 为链接之间添加间距 */
+}
+
+.email-links {
+    display: flex; /* 以弹性布局 */
+    justify-content: space-between; /* 左右间距合理 */
+    align-items: center; /* 垂直居中 */
+    padding: 10px; /* 内边距 10 像素 */
+    background-color: #f1f1f1; /* 背景颜色为浅灰色 */
+    margin-top: -19px; /* 顶部内边距相对于上面元素减少 19 像素 */
+}
+
+.email-links a {
+    color: #333; /* 文本颜色为深灰色 */
+    text-decoration: none; /* 无文本装饰 */
+    padding: 5px 10px; /* 内边距 5 像素 10
