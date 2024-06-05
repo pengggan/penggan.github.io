@@ -35,7 +35,7 @@ body {
 }
 
 .links a {
-    flex: 1 1 25%; /* 弹性比例为 1，可拉伸，宽度占 25% */
+    flex: 1 1 33%; /* 弹性比例为 1，可拉伸，宽度占 33% */
     text-decoration: none; /* 无文本装饰 */
     color: #333; /* 文本颜色为深灰色 */
     padding: 15px; /* 内边距 15 像素 */
@@ -60,7 +60,7 @@ body {
 
 .blog-link {
     margin-right: 20px; /* 右外边距 20 像素 */
-    font-size: 20px; /* 字体大小 16 像素 */
+    font-size: 20px; /* 字体大小 20 像素 */
     text-decoration: none; /* 无文本装饰 */
     color: #333; /* 文本颜色为深灰色 */
 }
