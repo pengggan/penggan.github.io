@@ -26,8 +26,9 @@ header h1 {
 
 /* 设置文章部分的样式，背景色为 #fff，带有阴影效果，下边距为 20px，内边距为 20px，边框圆角为 5px */
 .post {
-    background-color: #fff; /* 设置背景色 */
-    margin-bottom: 20px; /* 设置下边距 */
+    background-color: #f7f7f7; /* 设置背景色 */
+    margin-top: 1px;  /* 上边距为 20 像素 */
+    margin-bottom: 1px; /* 设置下边距 */
     padding: 20px; /* 设置内边距 */
     border-radius: 5px; /* 设置边框圆角 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 设置阴影效果 */
@@ -52,7 +53,7 @@ header h1 {
 
 /* 设置文章链接的样式，颜色为 #007BFF，去除下划线 */
 .post a {
-    color: #007BFF; /* 设置文字颜色 */
+    color: ##000; /* 设置文字颜色 */
     text-decoration: none; /* 去除下划线 */
 }
 
@@ -63,7 +64,7 @@ header h1 {
 
 /* 设置页脚部分的样式，背景色为 #fff，文本居中显示，固定在页面底部，带有阴影效果 */
 footer {
-    background-color: #fff; /* 设置背景色 */
+    background-color: #f7f7f7; /* 设置背景色 */
     text-align: center; /* 文本居中 */
     padding: 20px; /* 设置内边距 */
     position: sticky; /* 固定在页面底部 */
