@@ -53,7 +53,7 @@ header h1 {
 
 /* 设置文章链接的样式，颜色为 #007BFF，去除下划线 */
 .post a {
-    color: ##000; /* 设置文字颜色 */
+    color: #000; /* 设置文字颜色 */
     text-decoration: none; /* 去除下划线 */
 }
 
@@ -64,7 +64,7 @@ header h1 {
 
 /* 设置页脚部分的样式，背景色为 #fff，文本居中显示，固定在页面底部，带有阴影效果 */
 footer {
-    background-color: #f7f7f7; /* 设置背景色 */
+    background-color: #fff; /* 设置背景色 */
     text-align: center; /* 文本居中 */
     padding: 20px; /* 设置内边距 */
     position: sticky; /* 固定在页面底部 */
@@ -76,7 +76,7 @@ footer {
 .search-container {
     display: flex; /* 使用 Flex 布局 */
     justify-content: center; /* 水平居中显示 */
-    margin-bottom: 0px; /* 设置下边距 */
+    margin-bottom: 9px; /* 设置下边距 */
     background-color: #f7f7f7; /* 设置背景色 */
 }
 
