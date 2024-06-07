@@ -8,8 +8,8 @@
         body {
             font-family: Arial, sans-serif; /* 设置字体 */
             margin: 0; /* 设置外边距 */
-            padding-left: 10px;                   
-            padding-right: 10px;
+            padding-left: 11px;                   
+            padding-right: 11px;
             padding-top: 0px;
             padding-bottom: 0px;
             display: flex; /* 设置弹性布局 */
@@ -47,7 +47,7 @@
 
         .return-home {
             text-align: center; /* 文本居中对齐 */
-            margin: 4px 0; /* 设置垂直方向外边距 */
+            margin: 6px 0; /* 设置垂直方向外边距 */
             background-color: #f7f7f7; /* 设置背景色 */
         }
 
@@ -110,17 +110,18 @@
 
         </h2>
     </div>
+<div>
     <footer> <!-- 页脚 -->
         <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
-
+</div>
     <script>
         document.addEventListener("DOMContentLoaded", function() { /* 文档加载完毕执行 */
             var lastModified = document.lastModified; /* 获取最后修改日期 */
             var lastModifiedDate = new Date(lastModified); /* 创建日期对象 */
             var options = { year: 'numeric', month: 'long', day: 'numeric' }; /* 日期格式选项 */
             var formattedDate = lastModifiedDate.toLocaleDateString('zh-CN', options); /* 格式化日期 */
-            document.querySelector('.last-modified').textContent = '最后修改日期：' + formattedDate; /* 显示日期 */
+            document.querySelector('.last-modified').textContent = '' + formattedDate; /* 显示日期 */
         });
     </script> <!-- JavaScript显示最后修改日期 -->
 </body>
