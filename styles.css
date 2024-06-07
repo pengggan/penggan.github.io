@@ -14,6 +14,7 @@ body {
     width: 90%; /* 宽度为 90% */
     max-width: 600px; /* 最大宽度为 600 像素 */
     margin-bottom: 20px; /* 底部外边距 20 像素 */
+    background-color: #f7f7f7; /* 背景颜色为浅灰色 */
 }
 
 .category h2 {
