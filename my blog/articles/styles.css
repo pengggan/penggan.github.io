@@ -1,0 +1,54 @@
+body { /* 设置body元素的样式 */
+    font-family: Arial, sans-serif; /* 使用Arial字体，次选sans-serif */
+    margin: 0; /* 去掉默认的外边距 */
+    padding: 0; /* 去掉默认的内边距 */
+    line-height: 1.6; /* 设置行高 */
+    color: #333; /* 设置文字颜色 */
+}
+.container { /* 设置container类的样式 */
+    max-width: 800px; /* 设置最大宽度为800px */
+    margin: 0 auto; /* 设置外边距自动以居中 */
+    padding: 20px; /* 设置内边距为20px */
+}
+.header { /* 设置header类的样式 */
+    text-align: center; /* 设置文字居中 */
+    padding: 10px 0; /* 设置上下内边距为10px */
+    background: #f4f4f4; /* 设置背景颜色 */
+    border-bottom: 1px solid #ddd; /* 设置底部边框 */
+}
+.header a { /* 设置header中的a元素样式 */
+    color: black; /* 设置字体颜色为黑色 */
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 2em; /* 设置字体大小 */
+}
+.subheader { /* 设置subheader类的样式 */
+    text-align: center; /* 设置文字居中 */
+    margin: 10px 0; /* 设置上下外边距为10px */
+    font-size: 1.5em; /* 设置字体大小为1.5em */
+    color: #555; /* 设置文字颜色 */
+}
+.date { /* 设置date类的样式 */
+    text-align: center; /* 设置文字居中 */
+    margin: 5px 0; /* 设置上下外边距为5px */
+    color: #777; /* 设置文字颜色 */
+    font-size: 0.9em; /* 设置字体大小为0.9em */
+}
+.content { /* 设置content类的样式 */
+    padding: 20px 0; /* 设置上下内边距为20px */
+    word-wrap: break-word; /* 自动换行以适应容器宽度 */
+    white-space: pre-wrap; /* 保留空白字符并自动换行 */
+}
+@media (max-width: 600px) { /* 设置媒体查询，当屏幕宽度小于600px时应用以下样式 */
+    .container { /* 设置container类的样式 */
+        padding: 10px; /* 设置内边距为10px */
+    }
+    .header a { /* 设置header中的a元素样式 */
+        font-size: 1.5em; /* 设置字体大小 */
+    }
+    .subheader { /* 设置subheader类的样式 */
+        font-size: 1.2em; /* 设置字体大小为1.2em */
+    }
+    .date { /* 设置date类的样式 */
+        font-size: 0.8em; /* 设置字体大小为0.8em */
+    }
+}
