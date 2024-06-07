@@ -66,14 +66,19 @@
 <body>
     <!-- 内容容器 -->
     <div class="container">
-        <!-- 文章标题 -->
-        <h1>注册甲骨文云服务器的地址</h1>
+       <!-- 文章标题 -->
+
+             <h1>注册甲骨文云服务器的地址</h1>
+
+
+        <!-- 日期和时间 -->
+        <div id="date-time" style="text-align: center; margin-bottom: 20px;"></div>
         <!-- 返回首页链接 -->
         <div class="return-home">
             <a href="../index.html">返回首页</a>
         </div>
         <!-- 文章内容 -->
-        <p>
+<p>
             <a href="https://www.freedidi.com/wp-content/uploads/2022/08/freedidi_2022-08-24-224238.jpg">
                 <img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-6076" src="https://www.freedidi.com/wp-content/uploads/2022/08/freedidi_2022-08-24-224238.jpg" alt="" srcset="https://www.freedidi.com/wp-content/uploads/2022/08/freedidi_2022-08-24-224238.jpg 750w, https://www.freedidi.com/wp-content/uploads/2022/08/freedidi_2022-08-24-224238-520x292.jpg 520w" sizes="(max-width: 750px) 100vw, 750px"/>
             </a>
@@ -98,5 +103,15 @@
     <footer>
         <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
+    <!-- JavaScript to display date and time -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dateTimeElement = document.getElementById("date-time");
+            var currentDateTime = new Date();
+            var options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            var formattedDateTime = currentDateTime.toLocaleDateString('zh-CN', options);
+            dateTimeElement.textContent = formattedDateTime;
+        });
+    </script>
 </body>
 </html>
