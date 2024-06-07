@@ -22,6 +22,13 @@ header {
 header h1 {
     margin: 0; /* 去除默认外边距 */
     font-size: 24px; /* 设置字体大小 */
+    text-decoration: none; /* 去除下划线 */
+    color: #333; /* 设置文字颜色 */
+}
+
+header h1 a{
+    text-decoration: none; /* 去除下划线 */
+    color: #333; /* 设置文字颜色 */
 }
 
 /* 设置文章部分的样式，背景色为 #fff，带有阴影效果，下边距为 20px，内边距为 20px，边框圆角为 5px */
@@ -32,23 +39,17 @@ header h1 {
     padding: 20px; /* 设置内边距 */
     border-radius: 5px; /* 设置边框圆角 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 设置阴影效果 */
+    margin-top: 5px;  /* 上边距为 20 像素 */
+    padding: 10px 20px; /* 设置内边距 */
 }
 
 /* 设置文章标题的样式，去除默认的上下外边距，设置字体大小为 18px，文本左对齐 */
 .post h2 {
-    font-size: 18px; /* 设置字体大小 */
+    font-size: 19px; /* 设置字体大小 */
     text-align: left; /* 文本左对齐 */
     margin-top: 0; /* 去除上外边距 */
     margin-bottom: 0; /* 去除下外边距 */
     padding: 0; /* 去除内边距 */
-}
-
-/* 设置时间戳的样式，设置字体大小为 0.9em，颜色为 #888，上边距为 3px，文本右对齐 */
-.post .timestamp {
-    font-size: 0.7em; /* 设置字体大小 */
-    color: #888; /* 设置文字颜色 */
-    margin-top: 3px; /* 设置上外边距 */
-    text-align: left; /* 文本左对齐 */
 }
 
 /* 设置文章链接的样式，颜色为 #007BFF，去除下划线 */
@@ -62,6 +63,19 @@ header h1 {
     text-decoration: underline; /* 添加下划线 */
 }
 
+       .post {
+    font-size: 1.1em; /* 设置字体大小 */
+    color: #888; /* 设置文字颜色 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .timestamp {
+    font-size: 0.7em; /* 设置字体大小 */
+    color: #888; /* 设置文字颜色 */
+            margin-left: auto;
+            white-space: nowrap;
+        }
 /* 设置页脚部分的样式，背景色为 #fff，文本居中显示，固定在页面底部，带有阴影效果 */
 footer {
     background-color: #fff; /* 设置背景色 */
@@ -72,12 +86,12 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 设置阴影效果 */
 }
 
-/* 设置搜索框容器的样式，使用 Flex 布局，水平居中显示，下边距为 20px */
+/* 设置搜索框容器的样式，使用 Flex 布局，水平居中显示，下边距为 10px */
 .search-container {
     display: flex; /* 使用 Flex 布局 */
     justify-content: center; /* 水平居中显示 */
-    margin-bottom: 10px; /* 设置下边距 */
     background-color: #f7f7f7; /* 设置背景色 */
+    margin-bottom: 10px; /* 设置下边距 */
 }
 
 /* 设置搜索输入框的样式，宽度为 100%，最大宽度为 600px，内边距为 10px，字体大小为 16px */
@@ -86,7 +100,6 @@ footer {
     max-width: 600px; /* 设置最大宽度 */
     padding: 10px; /* 设置内边距 */
     font-size: 16px; /* 设置字体大小 */
-    background-color: #f7f7f7; /* 设置背景色 */
 }
 
 /* 设置分页容器的样式，使用 Flex 布局，水平居中显示，垂直居中显示 */
@@ -101,6 +114,7 @@ button {
     margin: 0 5px; /* 设置左右边距 */
     padding: 5px 10px; /* 设置内边距 */
     cursor: pointer; /* 设置光标样式 */
+ margin-top: 10px;  // 元素上方外边距为 20 像素
 }
 
 /* 在小屏幕下的响应式布局 */
