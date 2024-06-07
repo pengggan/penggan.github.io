@@ -1,114 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 设置字符编码和视口 -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024.06.03</title>
-    <!-- 内嵌样式 -->
+    <meta charset="UTF-8"> <!-- 设置字符编码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口 -->
+    <title>2024.06.03</title> <!-- 设置页面标题 -->
     <style>
-        /* 页面基础样式 */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f7f7f7; /* 修改容器背景色 */
+            font-family: Arial, sans-serif; /* 设置字体 */
+            margin: 0; /* 设置外边距 */
+            padding-left: 11px;                   
+            padding-right: 11px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            display: flex; /* 设置弹性布局 */
+            flex-direction: column; /* 垂直排列子元素 */
+            align-items: center; /* 居中对齐 */
+            background-color: #f7f7f7; /* 设置背景色 */
         }
 
-        /* 容器样式 */
         .container {
-            max-width: 800px;
-            width: 100%;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #f7f7f7; /* 修改容器背景色 */
-            text-align: justify;
+            max-width: 800px; /* 设置最大宽度 */
+            width: 100%; /* 设置宽度 */
+            padding: 0px; /* 设置内边距 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置阴影 */
+            background-color: #f7f7f7; /* 设置背景色 */
+            text-align: justify; /* 文本两端对齐 */
         }
 
-        /* 标题样式 */
         h1 {
-            text-align: center;
+            text-align: center; /* 文本居中对齐 */
             font-size: 1.3em; /* 设置字体大小 */
-            background-color: #f7f7f7; /* 修改容器背景色 */
+            background-color: #f7f7f7; /* 设置背景色 */
         }
 
-        /* h2样式 */
         h2 {
             background-color: #fff; /* 设置背景色为白色 */
-            padding: 10px; /* 添加内边距 */
+            font-size: 1em; /* 设置字体大小 */
         }
 
-        /* 日期样式 */
         .last-modified {
-            text-align: center;
-            font-size: 0.8em;
-            color: #888;
-            margin-top: -10px; /* 调整与标题的距离 */
+            text-align: center; /* 文本居中对齐 */
+            font-size: 0.8em; /* 设置字体大小 */
+            color: #888; /* 设置字体颜色 */
+            margin-top: -10px; /* 设置顶部外边距 */
         }
 
-        /* 返回首页链接样式 */
         .return-home {
-            text-align: center;
-            margin: 20px 0;
-            background-color: #f7f7f7; /* 修改链接背景色 */
+            text-align: center; /* 文本居中对齐 */
+            margin: 8px 0; /* 设置垂直方向外边距 */
+            background-color: #f7f7f7; /* 设置背景色 */
         }
 
-        /* 图片样式 */
         img {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
+            width: 100%; /* 设置宽度 */
+            height: auto; /* 设置高度自动 */
+            max-width: 100%; /* 设置最大宽度 */
         }
 
-        /* 代码块样式 */
         pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
+            white-space: pre-wrap; /* 设置预格式化文本换行 */
+            word-wrap: break-word; /* 设置长单词换行 */
         }
 
-        /* 响应式样式 */
         @media (max-width: 600px) {
             .container {
-                padding: 10px;
+                padding: 0px; /* 设置小屏幕内边距 */
             }
         }
     </style>
 </head>
 <body>
-    <!-- 内容容器 -->
-    <div class="container">
-        <!-- 文章标题 -->
-        <h1>shadowsocks 客户端下载| ss客户端</h1>
-        <!-- 显示最后修改日期 -->
-        <div class="last-modified"></div>
-        <!-- 返回首页链接 -->
-        <div class="return-home">
+    <div class="container"> <!-- 内容容器 -->
+
+
+        <h1>      <p>shadowsocks -Windows 客户端下载</p>
+        </h1>
+
+
+
+        <div class="last-modified"></div> <!-- 显示最后修改日期 -->
+        <div class="return-home"> <!-- 返回首页链接 -->
             <a href="../index.html">返回首页</a>
         </div>
-        <!-- 文章内容 -->
-        <h2>
-            <p>shadowsocks -Windows 客户端下载</p>
+         <!-- 文章内容 --><h2>
+
+
+         <p>shadowsocks -Windows 客户端下载</p>
             <p>&nbsp;</p>
             <p><span style="font-size: 14pt;"><strong>Github：</strong>（<a href="https://github.com/shadowsocks/shadowsocks-windows/releases/tag/4.1.10.0">点击下载</a>）</span></p>
         </h2>
     </div>
-    <!-- 页脚 -->
-    <footer>
+<div>
+    <footer> <!-- 页脚 -->
         <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScript to display the last modified date -->
+</div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var lastModified = document.lastModified;
-            var lastModifiedDate = new Date(lastModified);
-            var options = { year: 'numeric', month: 'long', day: 'numeric' };
-            var formattedDate = lastModifiedDate.toLocaleDateString('zh-CN', options);
-            document.querySelector('.last-modified').textContent = '最后修改日期：' + formattedDate;
+        document.addEventListener("DOMContentLoaded", function() { /* 文档加载完毕执行 */
+            var lastModified = document.lastModified; /* 获取最后修改日期 */
+            var lastModifiedDate = new Date(lastModified); /* 创建日期对象 */
+            var options = { year: 'numeric', month: 'long', day: 'numeric' }; /* 日期格式选项 */
+            var formattedDate = lastModifiedDate.toLocaleDateString('zh-CN', options); /* 格式化日期 */
+            document.querySelector('.last-modified').textContent = '' + formattedDate; /* 显示日期 */
         });
-    </script>
+    </script> <!-- JavaScript显示最后修改日期 -->
 </body>
 </html>
