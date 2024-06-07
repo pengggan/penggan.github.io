@@ -8,7 +8,10 @@
         body {
             font-family: Arial, sans-serif; /* 设置字体 */
             margin: 0; /* 设置外边距 */
-            padding: 20px; /* 设置内边距 */
+            padding-left: 11px;                   
+            padding-right: 11px;
+            padding-top: 0px;
+            padding-bottom: 0px;
             display: flex; /* 设置弹性布局 */
             flex-direction: column; /* 垂直排列子元素 */
             align-items: center; /* 居中对齐 */
@@ -18,7 +21,7 @@
         .container {
             max-width: 800px; /* 设置最大宽度 */
             width: 100%; /* 设置宽度 */
-            padding: 20px; /* 设置内边距 */
+            padding: 0px; /* 设置内边距 */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置阴影 */
             background-color: #f7f7f7; /* 设置背景色 */
             text-align: justify; /* 文本两端对齐 */
@@ -32,6 +35,7 @@
 
         h2 {
             background-color: #fff; /* 设置背景色为白色 */
+            font-size: 1em; /* 设置字体大小 */
         }
 
         .last-modified {
@@ -43,7 +47,7 @@
 
         .return-home {
             text-align: center; /* 文本居中对齐 */
-            margin: 20px 0; /* 设置垂直方向外边距 */
+            margin: 6px 0; /* 设置垂直方向外边距 */
             background-color: #f7f7f7; /* 设置背景色 */
         }
 
@@ -60,7 +64,7 @@
 
         @media (max-width: 600px) {
             .container {
-                padding: 10px; /* 设置小屏幕内边距 */
+                padding: 0px; /* 设置小屏幕内边距 */
             }
         }
     </style>
@@ -69,7 +73,8 @@
     <div class="container"> <!-- 内容容器 -->
 
 
-        <h1><!-- 内容 --></h1>
+        <h1>     <!-- 内容 -->
+        </h1>
 
 
 
@@ -77,27 +82,27 @@
         <div class="return-home"> <!-- 返回首页链接 -->
             <a href="../index.html">返回首页</a>
         </div>
-        <h2> <!-- 文章内容 -->
+         <!-- 文章内容 --><h2>
 
 
-       
-    <!-- 文章内容 -->
-
+            <p>        <!-- 内容 -->
+       <p/>
 
 
         </h2>
     </div>
+<div>
     <footer> <!-- 页脚 -->
         <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
-
+</div>
     <script>
         document.addEventListener("DOMContentLoaded", function() { /* 文档加载完毕执行 */
             var lastModified = document.lastModified; /* 获取最后修改日期 */
             var lastModifiedDate = new Date(lastModified); /* 创建日期对象 */
             var options = { year: 'numeric', month: 'long', day: 'numeric' }; /* 日期格式选项 */
             var formattedDate = lastModifiedDate.toLocaleDateString('zh-CN', options); /* 格式化日期 */
-            document.querySelector('.last-modified').textContent = '最后修改日期：' + formattedDate; /* 显示日期 */
+            document.querySelector('.last-modified').textContent = '' + formattedDate; /* 显示日期 */
         });
     </script> <!-- JavaScript显示最后修改日期 -->
 </body>
