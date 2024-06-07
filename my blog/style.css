@@ -76,7 +76,7 @@ footer {
 .search-container {
     display: flex; /* 使用 Flex 布局 */
     justify-content: center; /* 水平居中显示 */
-    margin-bottom: 9px; /* 设置下边距 */
+    margin-bottom: 10px; /* 设置下边距 */
     background-color: #f7f7f7; /* 设置背景色 */
 }
 
@@ -86,6 +86,7 @@ footer {
     max-width: 600px; /* 设置最大宽度 */
     padding: 10px; /* 设置内边距 */
     font-size: 16px; /* 设置字体大小 */
+    background-color: #f7f7f7; /* 设置背景色 */
 }
 
 /* 设置分页容器的样式，使用 Flex 布局，水平居中显示，垂直居中显示 */
