@@ -83,11 +83,6 @@
             <a href="../index.html">返回首页</a>
         </div>
          <!-- 文章内容 --><h2>
-														
-
-				</header>
-				<div class="entry-content">
-					<div class="entry themeform">	
 						<p><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-442" src="https://www.freedidi.com/wp-content/uploads/2020/08/2018-08-09-212709.png" width="440" height="300" srcset="https://www.freedidi.com/wp-content/uploads/2020/08/2018-08-09-212709.png 440w, https://www.freedidi.com/wp-content/uploads/2020/08/2018-08-09-212709-300x205.png 300w" sizes="(max-width: 440px) 100vw, 440px" /></p>
 <p>V2Ray的搭建，首先需要你拥有一台国外VPS服务器，如果还没有，可以参考以下链接文章购买：</p>
 <p><a href="https://ssr.tools/55" target="_blank" rel="noopener noreferrer">适合搭建SSR的国外VPS服务器推荐汇总</a></p>
@@ -113,29 +108,12 @@
 </ul>
 <p>以上各系统中，如果是新手朋友，不推荐使用CentOS，因为可能需要额外开放防火墙相关端口。而Debian和Ubuntu一般无需设置防火墙。</p>
 <p>&nbsp;</p>
-<h3>V2Ray一键安装脚本</h3>
+<p>V2Ray一键安装脚本</p>
 <p>1.用<a href="https://ssr.tools/72" target="_blank" rel="noopener noreferrer">Putty</a>连接VPS服务器，复制以下命令输入开始安装：</p>
-<div id="crayon-5e93caa55a783920125597" class="crayon-syntax crayon-theme-capacitacionti crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-always disable-anim">
-<div class="crayon-plain-wrap"></div>
-<div class="crayon-main">
-<table class="crayon-table">
-<tbody>
-<tr class="crayon-row">
-<td class="crayon-nums " data-settings="show">
-<div class="crayon-nums-content">
-<div class="crayon-num" data-line="crayon-5e93caa55a783920125597-1">1</div>
-</div>
-</td>
-<td class="crayon-code">
-<div class="crayon-pre">
-<div id="crayon-5e93caa55a783920125597-1" class="crayon-line"><span class="crayon-v">wget</span> <span class="crayon-o">&#8211;</span><span class="crayon-v">N</span> <span class="crayon-o">&#8212;</span><span class="crayon-v">no</span><span class="crayon-o">&#8211;</span><span class="crayon-v">check</span><span class="crayon-o">&#8211;</span><span class="crayon-e">certificate </span><span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//raw.githubusercontent.com/FunctionClub/V2ray.Fun/master/install.sh &amp;&amp; bash install.sh</span></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+
+<pre>wget –N —no–check–certificate https://raw.githubusercontent.com/FunctionClub/V2ray.Fun/master/install.sh && bash install.sh
+<pre/> </div>
+
 <p>如果运行以上命令时，出现找不到wget的英文提示，则表示系统没有安装wget，根据系统不同，选择以下命令安装：</p>
 <div id="crayon-5e93caa55a78c710257335" class="crayon-syntax crayon-theme-capacitacionti crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-always disable-anim">
 <div class="crayon-plain-wrap"></div>
