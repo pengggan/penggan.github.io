@@ -12,11 +12,11 @@ body { /* 设置body元素的样式 */
 }
 .header { /* 设置header类的样式 */
     text-align: center; /* 设置文字居中 */
-    padding: 10px 0; /* 设置上下内边距为10px */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 设置阴影效果 */
+    padding: 10px 20px; /* 设置内边距 */
     background-color: #f7f7f7; /* 背景颜色为浅灰色 */
-    border-bottom: 1px solid #ddd; /* 设置底部边框 */
- margin: 0; /* 外边距为 0 */
-    padding: 0; /* 内边距为 0 */
+    text-decoration: none; /* 去除下划线 */
+    color: #333; /* 设置文字颜色 */
 }
 
    pre {
@@ -41,12 +41,13 @@ body { /* 设置body元素的样式 */
             color: black; /* 设置字体颜色为黑色 */
             text-decoration: none; /* 去掉下划线 */
             font-size: 2em; /* 设置字体大小 */
+            
 
         }
         .subheader { /* 设置subheader类的样式 */
             text-align: center; /* 设置文字居中 */
-            margin: -25px 0; /* 设置上下外边距为10px */
-            font-size: 1.2em; /* 设置字体大小 */
+            margin: -20px 0; /* 设置上下外边距为10px */
+            font-size: 0.8; /* 设置字体大小 */
             color: #555; /* 设置文字颜色 */
         }
         .date { /* 设置date类的样式 */
@@ -54,6 +55,7 @@ body { /* 设置body元素的样式 */
             margin: 0px 0; /* 设置上下外边距为10px */
             color: #777; /* 设置文字颜色 */
             margin-top: -15px;
+            font-size: 0.9em; /* 设置字体大小 */
 
 }
   footer{ 
@@ -80,7 +82,7 @@ padding: 10px 0px; /* 设置内边距 */
 
     }
     .subheader { /* 设置subheader类的样式 */
-        font-size: 1em; /* 设置字体大小为1.2em */
+        font-size: 0.8em; /* 设置字体大小为1.2em */
     }
     .date { /* 设置date类的样式 */
         font-size: 0.8em; /* 设置字体大小为0.8em */

@@ -13,7 +13,7 @@ body {
 .category {
     width: 90%; /* 宽度为 90% */
     max-width: 600px; /* 最大宽度为 600 像素 */
-    margin-bottom: 20px; /* 底部外边距 20 像素 */
+    margin-bottom: 2px; /* 底部外边距 20 像素 */
     background-color: #f7f7f7; /* 背景颜色为浅灰色 */
 }
 
@@ -54,9 +54,9 @@ body {
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
     padding: 10px; /* 内边距 10 像素 */
-    background-color: #f1f1f1; /* 背景颜色为浅灰色 */
+    background-color: #f7f7f7; /* 背景颜色为浅灰色 */
     border-radius: 5px; /* 边框半径 5 像素 */
-    margin-bottom: 20px; /* 底部外边距 20 像素 */
+    margin-bottom: 2px; /* 底部外边距 20 像素 */
 }
 
 .blog-link {
@@ -97,7 +97,7 @@ body {
     justify-content: space-between; /* 左右间距合理 */
     align-items: center; /* 垂直居中 */
     padding: 10px; /* 内边距 10 像素 */
-    background-color: #f1f1f1; /* 背景颜色为浅灰色 */
+    background-color: #f7f7f7; /* 背景颜色为浅灰色 */
     margin-top: -19px; /* 顶部内边距相对于上面元素减少 19 像素 */
 }
 
