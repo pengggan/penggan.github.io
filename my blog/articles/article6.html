@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!-- 声明文档类型 -->
+<html lang="en"> <!-- 设置文档语言为英语 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置文档字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口，以确保页面在移动设备上正确显示 -->
+    <title>My Blog</title> <!-- 设置页面标题 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 引入外部CSS文件 -->
+</head>
+<body>
+<div class="header"> <!-- 定义一个类为header的div -->
+            <a href="../index.html">My home</a> <!-- 链接内容 -->
+        </div>
+    <div class="container"> <!-- 定义一个类为container的div -->
+        
+        <div class="subheader"> <!-- 定义一个类为subheader的div -->
+            <h2>TV更改NTP&刷机</h2> <!-- 文章主题 -->
+        </div>
+        <div class="date" id="lastModified"></div> <!-- 定义一个类为date的div，显示日期与时间 -->
+        <div class="content"> <!-- 定义一个类为content的div -->
+            <!-- 文章内容 -->
+              
+           
+            <!DOCTYPE html>
+            <html lang="zh-CN">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>悟空百科</title>
+            </head>
+            <body>
+               
+                <h2>root解锁代码:adb root </h2>
+                <p>🤩Google TV /Shield TV/Tivo Stream 4K 已连接无法访问互联网</p>
+                <p>解决方法 通过修改ntp服务器地址 改成国内NTP服务器即可</p>
+            
+                <h3>方法1：利用电脑</h3>
+                <p>adb 工具包地址- <a href="#">下载</a> 或者 <a href="#">github下载地址</a></p>
+                <p>注意:若你没有科学上网,出现已连接无法访问互联网的提示属于正常</p>
+                <p>如果下面的教程你看不明白，请看 <a href="#">苦口婆心 版</a></p>
+                <p>注：采用无线adb方式 无需连接数据线 只要保证在同一个局域网即可</p>
+                <p>相关视频：<a href="https://www.youtube.com/watch?v=0H27uZYdkxk">https://www.youtube.com/watch?v=0H27uZYdkxk</a></p>
+            
+                <ol>
+                    <li>打开adb设置-系统-关于-连续点击4次 Android TV操作系统版本，此时回到系统就有开发者选项-勾选USB调试</li>
+                    <li>连接adb（下载adb工具包-位于网盘） 如果有弹框 请点击确定按钮，如果没有弹框，请检查开发者模式下的USB调试模式是否打开，也可以反复开启和关闭USB调试按钮的开关，还可以点击下方的撤销调试模式的授权，ADB这个功能在android底层本身还是有一些bug的，需要是反复开启和关闭，直到你输入
+                        <pre><code>adb shell</code></pre>
+                        回车之后，能成功进入命令行模式，才算是真正的连接成功。退出命令行模式用exit回车
+                        
+                        <pre><code>$ adb connect 192.168.xx.xx</code></pre>
+                    </li>
+                    <li>写入新的ntp服务器地址
+                        
+                        <pre><code>adb shell settings put global ntp_server ntp3.aliyun.com</code></pre>
+                        <p>国内ntp服务器 备用地址</p>
+                        <ul>
+                            <li>ntp1.aliyun.com</li>
+                            <li>ntp2.aliyun.com</li>
+                            <li>ntp3.aliyun.com</li>
+                            <li>ntp4.aliyun.com</li>
+                            <li>ntp5.aliyun.com</li>
+                            <li>ntp6.aliyun.com</li>
+                            <li>ntp7.aliyun.com</li>
+                        </ul>
+                    </li>
+                </ol>
+            
+                <p>如果你没有使用软路由，而是在电视盒子里使用了代理软件比如clash或者其他vpn，那么你会发现，即便修改了时间服务器地址，每次重启盒子，首先是wifi并不会自动连接，其次就算连接也还是会提示网络受限。这是因为Android原生电视盒子的联网原理导致的，源码中有一个叫做isCaptivePortal() 的函数，用来检查网络状况的判断，它需要一个返回值http 204 （空内容的意思）的网址，源码里默认使用 clients3.google.com/generate_204 这个网址，很显然这个网址，你若没用代理是访问不到的。因此安卓就没法正确判断当前的网络状态，所以要想解决此问题，需要我们换成一个能在国内直接访问的，用于返回http 204的网址。我们姑且把它叫做 验证服务器 吧。目前已经有很多公司制作了这样的验证服务器。</p>
+                
+                <ul>
+                    <li>小米： <a href="http://connect.rom.miui.com/generate_204">connect.rom.miui.com/generate_204</a></li>
+                    <li>华为： <a href="http://connectivitycheck.platform.hicloud.com/generate_204">connectivitycheck.platform.hicloud.com/generate_204</a></li>
+                    <li>Vivo： <a href="http://wifi.vivo.com.cn/generate_204">wifi.vivo.com.cn/generate_204</a></li>
+                </ul>
+            
+                <h3>具体修改方法：</h3>
+               
+                <pre><code># 打开网络验证
+            //如果你是Android 11.0 以上的电视盒子（还比较少）
+            adb shell settings put global captive_portal_mode 1
+            
+            //Android 10.0 以下的电视盒子（比较多）
+            adb shell settings put global captive_portal_detection_enabled 1
+            
+            # 设置一个返回204 空内容的服务器
+            adb shell settings put global captive_portal_use_https 0
+            adb shell settings put global captive_portal_http_url http://connect.rom.miui.com/generate_204
+            </code></pre>
+                <p>⬆️注意上述代码中http_url 后面是空格，不是换行哦</p>
+            
+                <h3>如何查看设置的参数？</h3>
+                
+                <pre><code>adb shell settings list global</code></pre>
+            
+                <h3>如何恢复原来的参数？</h3>
+                
+                # 使用默认，即删除配置<pre><code>
+            adb shell settings delete global captive_portal_http_url 
+            adb shell settings delete global captive_portal_https_url</code></pre>
+            
+                <h3>4、重启Google TV后生效</h3>
+            
+                <h3>mac电脑如何使用adb？</h3>
+                <p>此问题可以参考我3年前的视频 <a href="https://www.youtube.com/watch?v=ZK9rJ5w0W4o">https://www.youtube.com/watch?v=ZK9rJ5w0W4o</a></p>
+                <p>也可以参考此人简书：<a href="https://www.jianshu.com/p/1b3fb1f27b67">https://www.jianshu.com/p/1b3fb1f27b67</a></p>
+            </body>
+            </html>
+            ```
+            
+ <!-- 文章内容 -->
+        </div>
+    </div>
+  <script>
+        // 显示最后修改日期和时间
+        document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleString(); 
+        
+        // 设置文章标题
+        document.getElementById('articleTitle').textContent = "Your Article Title"; 
+
+        function copyContent() {
+      const content = document.getElementById('content').innerText;
+      navigator.clipboard.writeText(content);
+    }
+</script>
+</body>
+</html>

@@ -64,19 +64,26 @@ body { /* 设置body元素的样式 */
             align-items: center;
     background-color: #f7f7f7; /* 背景颜色为浅灰色 */
 }
-.content { /* 设置content类的样式 */
+.content {/* 设置content类的样式 */
     padding: 0px 0; /* 设置上下内边距为20px */
 width: 100%; /* 设置宽度 */
   max-width: 800px; /* 设置最大宽度 */
   text-align: justify; /* 文本两端对齐 */
 padding: 10px 0px; /* 设置内边距 */
     }
+    .content  h2{
+        font-size: 1em; /* 设置字体大小 */
 
+
+    }       
+           
 }
 @media (max-width: 600px) { /* 设置媒体查询，当屏幕宽度小于800px时应用以下样式 */
     .container { /* 设置container类的样式 */
         padding: 10px; /* 设置内边距为10px */
+      
     }
+     
     .header a { /* 设置header中的a元素样式 */
         font-size: 1.5em; /* 设置字体大小 */
 
@@ -87,5 +94,6 @@ padding: 10px 0px; /* 设置内边距 */
     .date { /* 设置date类的样式 */
         font-size: 0.8em; /* 设置字体大小为0.8em */
     }
+    <h2>    font-size: 0.1em; /* 设置字体大小为1.2em */
 }
 
