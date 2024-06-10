@@ -90,7 +90,7 @@ footer {
     justify-content: center; /* 水平居中显示 */
     background-color: #f7f7f7; /* 设置背景色 */
     margin-bottom: 0px; /* 设置下边距 */
-    margin-top: 0px;  // 元素上方外边距为 20 像素
+    margin-top: 10px;  // 元素上方外边距为 20 像素
 }
 
 /* 设置搜索输入框的样式，宽度为 100%，最大宽度为 600px，内边距为 10px，字体大小为 16px */
@@ -127,4 +127,12 @@ button {
     button {
         padding: 5px; /* 设置内边距 */
     }
+    .search-container {
+        display: flex; /* 使用 Flex 布局 */
+        justify-content: center; /* 水平居中显示 */
+        background-color: #f7f7f7; /* 设置背景色 */
+        margin-bottom: 0px; /* 设置下边距 */
+        margin-top: 0px;  // 元素上方外边距为 20 像素
+    }
+
 }
