@@ -12,6 +12,24 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            margin-left: 11px;
+            margin-right: 11px;
+            text-decoration: none; /* 去除下划线 */
+        }
+
+        .header { /* 设置header类的样式 */
+    text-align: center; /* 设置文字居中 */
+    padding: 10px 20px; /* 设置内边距 */
+    background-color: #f7f7f7; /* 背景颜色为浅灰色 */
+    font-weight: bold;
+}
+
+.header a { /* 设置header中的a元素样式 */
+            color: black; /* 设置字体颜色为黑色 */
+            text-decoration: none; /* 去掉下划线 */
+            font-size: 1.8em; /* 设置字体大小 */
+            
+
         }
         .container {
             width: 90%;
@@ -22,7 +40,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             max-width: 800px; /* 设置最大宽度为800px */
-    padding: 20px; /* 设置内边距为20px */
+            padding: 20px; /* 设置内边距为20px */
 
         }
         h1 {
@@ -33,6 +51,7 @@
             list-style-type: none;
             padding: 0;
         }
+        
         li {
             background: #eee;
             margin: 10px 0;
@@ -54,8 +73,11 @@
     
     </style>
 </head>
+
 <body>
-    
+    <div class="header"> <!-- 定义一个类为header的div -->
+        <a href="../index.html">My home</a> <!-- 链接内容 -->
+    </div>
     <div class="container">
         <h1>工作自信小技巧</h1>
         <ul>
