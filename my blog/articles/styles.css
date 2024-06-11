@@ -1,26 +1,27 @@
 body { /* 设置body元素的样式 */
     font-family: Arial, sans-serif; /* 使用Arial字体，次选sans-serif */
     color: #333; /* 设置文字颜色 */
-    width: 100%;
     word-break: break-all;
+    margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+        margin-right: 0px;
 }
 
 .header { /* 设置header类的样式 */
     text-align: center; /* 设置文字居中 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 设置阴影效果 */
     padding: 10px 20px; /* 设置内边距 */
     background-color: #f7f7f7; /* 背景颜色为浅灰色 */
     text-decoration: none; /* 去除下划线 */
     color: #333; /* 设置文字颜色 */
     font-weight: bold;
+
 }
 
 .container { /* 设置container类的样式 */
-    max-width: 600px; /* 设置最大宽度为800px */
-    margin: 0 auto; /* 设置外边距自动以居中 */
-    padding: 20px; /* 设置内边距为20px */
-    padding: 0px 0; /* 设置上下内边距为20px */
-    text-align: justify; /* 文本两端对齐 */
+        
+        margin-left: 11px;
+        margin-right: 11px;
 }
    pre {
             white-space: pre-wrap;
@@ -80,16 +81,15 @@ body { /* 设置body元素的样式 */
 
 @media (max-width: 800px) { /* 设置媒体查询，当屏幕宽度小于800px时应用以下样式 */
     .container { /* 设置container类的样式 */
-        padding: 16px; /* 设置内边距为10px */
-        margin: 0; /* 去除页面默认外边距 */
-       
-        
-     
+        margin-left: 11px;
+        margin-right: 11px; 
+        margin: 20px; /* 设置上下外边距为10px */
     }
      
     .header a { /* 设置header中的a元素样式 */
         font-size: 1.3em; /* 设置字体大小 */
         text-decoration: none; /* 去除下划线 */
+        
 
     }
     .subheader { /* 设置subheader类的样式 */
