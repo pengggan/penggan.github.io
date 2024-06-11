@@ -86,6 +86,7 @@ body {
     border: none; /* 无边框 */
     border-radius: 3px; /* 边框半径 3 像素 */
     cursor: pointer; /* 鼠标悬停时光标为指针 */
+    padding: 10px; /* 内边距 10 像素 */
 }
 
 .search-button:hover {

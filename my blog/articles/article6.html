@@ -19,15 +19,8 @@
         <div class="content"> <!-- 定义一个类为content的div -->
             <!-- 文章内容 -->
               
-           
-            <!DOCTYPE html>
-            <html lang="zh-CN">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>悟空百科</title>
-            </head>
-            <body>
+
+    
                
                 <h2>root解锁代码:adb root </h2>
                 <p>🤩Google TV /Shield TV/Tivo Stream 4K 已连接无法访问互联网</p>
@@ -66,11 +59,11 @@
             
                 <p>如果你没有使用软路由，而是在电视盒子里使用了代理软件比如clash或者其他vpn，那么你会发现，即便修改了时间服务器地址，每次重启盒子，首先是wifi并不会自动连接，其次就算连接也还是会提示网络受限。这是因为Android原生电视盒子的联网原理导致的，源码中有一个叫做isCaptivePortal() 的函数，用来检查网络状况的判断，它需要一个返回值http 204 （空内容的意思）的网址，源码里默认使用 clients3.google.com/generate_204 这个网址，很显然这个网址，你若没用代理是访问不到的。因此安卓就没法正确判断当前的网络状态，所以要想解决此问题，需要我们换成一个能在国内直接访问的，用于返回http 204的网址。我们姑且把它叫做 验证服务器 吧。目前已经有很多公司制作了这样的验证服务器。</p>
                 
-                <ul>
+                
                     <li>小米： <a href="http://connect.rom.miui.com/generate_204">connect.rom.miui.com/generate_204</a></li>
                     <li>华为： <a href="http://connectivitycheck.platform.hicloud.com/generate_204">connectivitycheck.platform.hicloud.com/generate_204</a></li>
                     <li>Vivo： <a href="http://wifi.vivo.com.cn/generate_204">wifi.vivo.com.cn/generate_204</a></li>
-                </ul>
+                
             
                 <h3>具体修改方法：</h3>
                
