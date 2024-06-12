@@ -96,7 +96,7 @@ http://39.134.115.163:8080/PLTV/88888888/224/3221225585/2/index.m3u8
 #EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" tvg-logo="https://penggan.cloudns.be/tv/tv/贵州卫视.png" group-title="移动宽带",贵州卫视
 http://39.134.115.163:8080/PLTV/88888888/224/3221225483/2/index.m3u8
 #EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://penggan.cloudns.be/tv/tv/吉林卫视.png" group-title="移动宽带",吉林卫视
-http://39.134.115.163:8080/PLTV/88888910/224/3221226355//index.m3u8
+http://39.134.115.163:8080/PLTV/88888910/224/3221226355/index.m3u8
 #EXTINF:-1 tvg-id="江西教育" tvg-name="江西教育" tvg-logo="https://penggan.cloudns.be/tv/tv/江西教育.png" group-title="移动宽带",江西教育
 http://39.134.115.163:8080/PLTV/88888910/224/3221226197/index.m3u8
 #EXTINF:-1 tvg-id="上海纪实人文" tvg-name="上海纪实人文" tvg-logo="https://penggan.cloudns.be/tv/tv/纪实人文.png" group-title="移动宽带",纪实人文
@@ -106,7 +106,7 @@ http://39.134.115.163:8080/PLTV/88888910/224/3221225676/index.m3u8
 #EXTINF:-1 tvg-id="求索纪录 " tvg-name="求索纪录" tvg-logo="https://penggan.cloudns.be/tv/tv/求索纪录.png" group-title="移动宽带",求索纪录
 http://39.134.115.163:8080/PLTV/88888910/224/3221226324/index.m3u8
 #EXTINF:-1 tvg-id="纪实科教" tvg-name="纪实科教" tvg-logo="https://penggan.cloudns.be/tv/tv/北京纪实科教.png" group-title="移动宽带",纪实科教
-http://39.134.115.163:8080/PLTV/88888910/224/3221226365//index.m3u8
+http://39.134.115.163:8080/PLTV/88888910/224/3221226365/index.m3u8
 #EXTINF:-1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://penggan.cloudns.be/tv/tv/金鹰卡通.png" group-title="移动宽带",金鹰卡通
 http://39.134.115.163:8080/PLTV/88888910/224/3221225721/index.m3u8
 #EXTINF:-1 tvg-id="哈哈炫动" tvg-name="哈哈炫动" tvg-logo="https://penggan.cloudns.be/tv/tv/哈哈炫动.png" group-title="移动宽带",哈哈炫动

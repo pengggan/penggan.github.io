@@ -358,7 +358,7 @@
             "itemid": "uid0002",
             "name": "纪实科教",
             "num": "00060",
-            "urllist": "http://39.134.115.163:8080/PLTV/88888910/224/3221226365//index.m3u8"
+            "urllist": "http://39.134.115.163:8080/PLTV/88888910/224/3221226365/index.m3u8"
         },
         {
             "itemid": "uid0002",
@@ -544,7 +544,7 @@
             "itemid": "uid0002",
             "name": "凤凰香港",
             "num": "00091",
-            "urllist": "http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221226251/index.m3u8" 
+            "urllist": "http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221226251/index.m3u8"
         }
     ],
     "type": [
