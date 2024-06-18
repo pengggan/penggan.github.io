@@ -29,17 +29,31 @@ a {
     margin-left: 11px;
     margin-right: 11px;
 }
-   pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            overflow: auto;
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            line-height: 1.5;
-            
-        }
+pre {
+    background: #eee;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: pre-wrap; /* 折行 */
+    word-wrap: break-word; /* 防止长单词破坏布局 */
+    overflow: auto; /* 允许滚动条 */
+}
+
+.copy-container {
+    position: relative;
+    display: inline-block;
+}
+.copy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
 
         .content  h1{
             font-size: 1em; /* 设置字体大小 */
